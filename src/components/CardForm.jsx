@@ -146,7 +146,7 @@ const CardForm = () => {
     });
 
     try {
-      const response = await axios.post('https://dc62-119-156-117-160.ngrok-free.app/api/create-card', formDataWithFiles, {
+      const response = await axios.post('https://customerhub-server-m8avm.ondigitalocean.app/api/create-card', formDataWithFiles, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
@@ -213,14 +213,14 @@ const CardForm = () => {
               Email <span className="text-red-500">*</span>
             </label>
             <input
-              type="email"
+              type="text"
               id="userEmail"
               name="userEmail"
               value={formData.userEmail}
               onChange={handleChange}
               className="w-full p-3 border border-gray-300 rounded-md mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
               placeholder="Enter your email"
-              required
+              // required
             />
           </div>
 
