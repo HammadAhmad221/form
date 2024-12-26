@@ -57,6 +57,7 @@ const CardForm = () => {
         },
       });
       setLists(response.data);
+      console.log("boardlists: ", response.data);
       if (response.data.length > 0) {
         setFormData((prevData) => ({
           ...prevData,
