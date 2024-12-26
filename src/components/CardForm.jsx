@@ -40,6 +40,7 @@ const CardForm = () => {
         },
       });
       setBoards(response.data);
+      console.log("Boards: ",response.data);
     } catch (err) {
       console.error('Error fetching boards:', err);
       setError('There was an error fetching boards.');
