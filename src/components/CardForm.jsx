@@ -314,18 +314,6 @@ const CardForm = () => {
               placeholder="Enter Loom video URL"
             />
           </div>
-          {/* <div className="mb-4">
-            <label htmlFor="imageUrl" className="block text-gray-700">Image URL</label>
-            <input
-              type="url"
-              id="imageUrl"
-              name="imageUrl"
-              value={formData.imageUrl}
-              onChange={handleChange}
-              className="w-full p-3 border border-gray-300 rounded-md mt-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter image URL"
-            />
-          </div> */}
           <div className="mb-4">
             <label className="block text-gray-700">Attachments</label>
             <div {...getRootProps()} className="border-2 border-dashed p-4 mt-2 text-center cursor-pointer">
